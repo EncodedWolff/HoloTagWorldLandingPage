@@ -1,0 +1,94 @@
+
+body {
+  background-color: #95AB63;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.jw-card{
+  margin: 20px;
+
+}
+
+.jw-card-image{
+  border-radius: 10px;
+  width: 300px;
+  height: 480px;
+  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25);
+  background-color: white;
+}
+
+.jw-card-info {
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
+  min-height: 100px;
+  width: 300px;
+}
+
+.jw-card-title{
+  font-size: 24px;
+  margin: 0px;
+}
+
+.jw-card-subtitle{
+  font-size: 16px;
+  margin: 0px;
+}
+.justify-content-center {
+  justify-content: center;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+.header{
+  /* margin-top: 3%; */
+  background-image: url(../src/images/jumbotron-background.jpeg);
+}
+
+.holotag-green{
+  background-color: #95AB63;
+}
+
+.holotag-beige{
+  background-color: #D9CB9E;
+}
+
+.fill-screen{
+  height: 100%;
+}
+
+.holotag-border{
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25);
+  color: white;
+}
+
+.tabbed-area{
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25);
+  background-color: #95AB63;
+}
+
+.jumbotron{
+  border-top: none;
+}
+
+.tabs{
+  border-bottom: none;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
