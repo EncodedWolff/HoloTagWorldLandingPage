@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Container, Navbar, Nav, Tabs, Tab } from 'react-bootstrap';
 
 import Footer from './components/Footer';
@@ -45,86 +45,36 @@ export default class App extends React.Component {
   render() {
     return (
       <Container className=" vh-100" fluid="true">
-        <Router>
-          <Header title="HoloTag World" />
-          <Container className="tabbed-area">
+        <Header title="HoloTag World" />
+        <Container className="tabbed-area">
+          <Tabs defaultActiveKey="home">
 
-            {/* <Navbar className="holotag-green fixed-top">
-              <Navbar.Brand>
-                <Link className="text-light" to="/">HoloTag World</Link>
-              </Navbar.Brand>
-
-              <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
-              <Navbar.Collapse id="navbar-toggle">
-
-                <Nav className="ml-auto">
-                  <Link className="nav-link text-light" to="/">Home</Link>
-                  <Link className="nav-link text-light" to="/about">About</Link>
-                  <Link className="nav-link text-light" to="/quests">Quests</Link>
-
-                </Nav>
-
-              </Navbar.Collapse>
-            </Navbar> */}
-            <Tabs defaultActiveKey="home">
-
-              <Tab eventKey="home" title="Home">
-                <HomePage
-                  title={this.state.home.title}
-                  subtitle={this.state.home.subtitle}
-                  description={this.state.home.description}
-                  nfc={this.state.nfc}
-                  quests={this.state.quests}
-                />
-              </Tab>
-
-              <Tab eventKey="about" title="About">
-                <AboutPage
-                  title={this.state.about.title}
-                />
-              </Tab>
-
-              <Tab eventKey="nfc" title="NFC">
-                <NfcPage title={this.state.nfc.title} />
-              </Tab>
-
-              <Tab eventKey="quests" title="Quests">
-                <QuestPage title={this.state.quests.title} />
-              </Tab>
-            </Tabs>
-
-            {/* <Route path="/" exact render={() =>
+            <Tab eventKey="home" title="Home">
               <HomePage
                 title={this.state.home.title}
                 subtitle={this.state.home.subtitle}
                 description={this.state.home.description}
                 nfc={this.state.nfc}
                 quests={this.state.quests}
-              /> */}
-            {/* } /> */}
+              />
+            </Tab>
 
-            <Route path="/about" render={() =>
+            <Tab eventKey="about" title="About">
               <AboutPage
                 title={this.state.about.title}
               />
-            } />
+            </Tab>
 
-            <Route path="/quests" render={() =>
-              <QuestPage
-                title={this.state.quests.title}
-              />
-            } />
+            <Tab eventKey="nfc" title="NFC">
+              <NfcPage title={this.state.nfc.title} />
+            </Tab>
 
-            <Route path="/nfc" render={() =>
-              <NfcPage
-                title={this.state.nfc.title}
-              />
-            } />
-
-
-          </Container>
-          <Footer />
-        </Router>
+            <Tab eventKey="quests" title="Quests">
+              <QuestPage title={this.state.quests.title} />
+            </Tab>
+          </Tabs>
+        </Container>
+        <Footer />
       </Container>
     );
   }

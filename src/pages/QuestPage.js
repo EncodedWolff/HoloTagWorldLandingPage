@@ -56,7 +56,7 @@ export default class QuestPage extends React.Component {
                     {this.loadArticles(this.state.articleList)}
 
                     <br />
-                    <Container className="holotag-green holotag-border">
+                    <Container className="holotag-beige holotag-border">
                         <h5>Example Quest:</h5>
                         <p>
                             You find a node located a the public library and touch your device to the node.

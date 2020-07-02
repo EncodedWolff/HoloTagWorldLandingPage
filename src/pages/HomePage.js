@@ -8,7 +8,7 @@ export default function HomePage(props) {
     return (
         <Container fluid="true">
             <Header title={props.title} />
-            <Container className="holotag-green holotag-border">
+            <Container className="holotag-beige holotag-border">
                 <h3>{props.subtitle}</h3>
                 <p>{props.description}</p>
             </Container>
