@@ -12,7 +12,7 @@ export default class QuestPage extends React.Component {
             articleList: [
                 {
                     articleTitle: "What are quests?",
-                    articleContent: "Quests are small goals that are created by users. For instance, you may create a quest that requires that the quest taker to photograph three locations and post to the HoloTag World website. Most quests will be on the honor system. The user can participate as much as they would like and still continue along a quest chain. Also, quests that contain multiple Nodes can be tracked dynamically because the user scans the each HoloTag Node in sequence along the way and updates with the HoloTag World Servers."
+                    articleContent: "Quests are small goals that are created by users. For instance, you may create a quest that requires the quest taker to photograph three locations and post to the HoloTag World website. Most quests will be on the honor system. The user can participate as much as they would like and still continue along a quest chain. Also, quests that contain multiple Nodes can be tracked dynamically because the user scans the each HoloTag Node in sequence along the way and updates with the HoloTag World Servers."
                 },
                 {
                     articleTitle: "How do I start a quest?",
